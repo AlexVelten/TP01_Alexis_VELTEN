@@ -1,0 +1,28 @@
+#formulaire {
+  margin-bottom: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.lbl-radio {
+  margin-left: 5px;
+}
+
+[type="radio"]{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.color-red {
+  color: red;
+}
+
+#required-text {
+  color:red;
+}
+
+#btn-valider {
+  margin-top: 15px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Script.js"></script>
+  <title>TP 1</title>
+</head>
+<body>
+  <div class="container">
+    <form id="formulaire" onsubmit="FormValidation()">
+      <div class="center">
+        <h1 class="display-4">Informations personnelles</h1>
+      </div>
+      <span>Civilité : <span class="color-red">*</span><span>
+      <input type="radio" id="homme" name="civilite" value="Homme"><label class="lbl-radio" for="homme">Homme</label>
+      <input type="radio" id="femme" name="civilite" value="Femme"><label class="lbl-radio" for="femme">Femme</label>
+      <input type="radio" id="autre" name="civilite" value="Autre"><label class="lbl-radio" for="autre">Autres</label>
+      <div class="form-group">
+        <label for="nom">Entrez votre nom : <span class="color-red">*</span></label>
+        <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Entrez votre prénom : <span class="color-red">*</span></label>
+        <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" required>
+      </div>
+      <div class="form-group">
+        <label for="adresse">Entrez votre adresse postale : <span class="color-red">*</span></label>
+        <input type="text" class="form-control" name="adresse" id="adresse" placeholder="Adresse postale" required>
+      </div>
+      <div class="form-group">
+        <label for="ville">Entrez votre ville : <span class="color-red">*</span></label>
+        <input type="text" class="form-control" name="ville" id="ville" placeholder="Ville" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Entrez votre numéro de téléphone : <span class="color-red">*</span></label>
+        <input type="tel" class="form-control"  name="telephone" id="telephone" placeholder="Telephone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Entrez votre adresse mail : <span class="color-red">*</span></label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+      </div>
+      <div class="center">
+        <h1 class="display-4">Informations de connexion</h1>
+      </div>
+      <div class="form-group">
+        <label for="login">Entrez votre login : <span class="color-red">*</span></label>
+        <input type="login" class="form-control" name="login" id="login" placeholder="Login" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Entrez votre mot de passe : <span class="color-red">*</span></label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe" required>
+      </div>
+      <div class="form-group">
+        <label for="verif-password">Entrez une nouvelle fois votre mot de passe : <span class="color-red">*</span></label>
+        <input type="password" class="form-control" name="verif-password" id="verif-password" placeholder="Vérifier votre mot de passe" required>
+      </div>
+      <div class="center">
+        <small id="required-text" class="color-red">Les champs suivit d'un * sont obligatoires</small><br>
+        <button type="submit" id="btn-valider" class="btn btn-primary">Valider les informations</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
